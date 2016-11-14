@@ -9,6 +9,27 @@ const amountOfCocoaPowderForBrownies = 1 / 3;
 const amountOfFlourForBrownies = 0.5;
 const amountOfSaltForBrownies = 0.25;
 const amountOfBakingPowderForBrownies = 0.25;
+const amountOfEggsT=6;
+const amountOfWhiteSugarT=0.75;
+const amountOfMilkT=2/3;
+const amountOfHeavyCreamT=1.25;
+const amountOfVanillaExtractT=0.5;
+const amountOfMascarponeCheeseT=1;
+const amountOfStrongCoffeeT=0.25;
+const amountOfrumT=2;
+const amountOfLadyFingerCookiesT=2;
+const amountOfCocoaPowderT=1;
+const amountOfButterC=1;
+const amountOfWhiteSugarC=1;
+const amountOfBrownSugarC=1;
+const amountOfEggsC=2;
+const amountOfVanillaExtractC=2;
+const amountOfFlourC=3;
+const amountOfBakingSodaC=1;
+const amountOfHotWaterC=2;
+const amountOfSaltC=0.5;
+const amountOfWalnutsC=1;
+
 
 
 function remainder(amount) {
@@ -149,7 +170,7 @@ function Browniesfortxt() {
 
 
     var times = parseFloat(document.getElementById("timestxt").value);
-    
+
 
 
     var outputPart1Butter = calculations(times, amountOfButterForBrownies);
