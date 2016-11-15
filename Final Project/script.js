@@ -130,6 +130,45 @@ function findGCF(wholenumber,deminator) {
 
 
 }
+
+function DessertRandom() {
+
+    var browines= 0;
+    var fruitPizza=1;
+    var ChoclateChipCookies=2;
+    var Tiramisu=3;
+
+    var numberRandom=randomInt();
+    if(Tiramisu==numberRandom) {
+        document.getElementById("picture").src="images/864554.jpg";
+
+        document.getElementById("nameOfDessert").innerHTML="Tiramisu";
+
+
+    }
+        else if( fruitPizza==numberRandom) {
+            document.getElementById("picture").src="images/Fruit Pizza I.jpg";
+        document.getElementById("nameOfDessert").innerHTML="Fruit Pizza";
+
+    }
+        else if(ChoclateChipCookies==numberRandom) {
+            document.getElementById("picture").src="images/2514148.jpg";
+        document.getElementById("nameOfDessert").innerHTML="Chocolate Chip Cookies"
+
+    }
+        else {
+            document.getElementById("picture").src="images/1090243.jpg";
+        document.getElementById("nameOfDessert").innerHTML="Brownies";
+
+    }
+
+}
+
+function randomInt() {
+    var number= Math.floor(4*Math.random());
+    return number;
+
+}
 function Multiply(amount, times) {
     var totalAmountneeded = amount * times;
 
