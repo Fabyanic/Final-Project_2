@@ -147,7 +147,7 @@ function DessertRandom() {
 
     }
         else if( fruitPizza==numberRandom) {
-            document.getElementById("picture").src="images/Fruit Pizza I.jpg";
+            document.getElementById("picture").src="images/pizza.jpg";
         document.getElementById("nameOfDessert").innerHTML="Fruit Pizza";
 
     }
@@ -229,6 +229,151 @@ function Browniesfortxt() {
     document.getElementById("browniesFlour").innerHTML = outputPart1Flour + " cup all-purpose flour";
     document.getElementById("browniesSalt").innerHTML = outputPart1Salt + " teaspoon Salt";
     document.getElementById("browniesBakingPowder").innerHTML = outputPart1BakingPowder + " teaspoon baking powder";
+
+
+}
+function ConverterDry1() {
+    var amount = parseFloat(document.getElementById("cupAmount").value);
+    var teaspoons= amount* 48;
+    var Tablespoons= amount*16;
+
+    document.getElementById("TeaSpoonsBox2").innerHTML= teaspoons;
+    document.getElementById("TableSpoons").innerHTML= Tablespoons;
+    var amount2= parseFloat(document.getElementById("tableSpoonAmount").value)
+
+}
+function ConverterDry2() {
+    var amount2= parseFloat(document.getElementById("tableSpoonAmount").value);
+    var teaspoons= amount2*3;
+    var cups= amount2/16;
+
+    document.getElementById("teaspoonsBox").innerHTML= teaspoons;
+    document.getElementById("CupsBox").innerHTML= cups;
+
+
+}
+function ConverterDry3() {
+    var amount2= parseFloat(document.getElementById("cupsAmounts").value);
+    var pint= amount2/2;
+    var quarts= pint/2;
+    var gallons= quarts/4;
+
+    document.getElementById("pintsBox").innerHTML= pint;
+    document.getElementById("QuartBox").innerHTML= quarts;
+    document.getElementById("gallonBox").innerHTML=gallons;
+
+
+}
+function ConverterDry4() {
+    var amount2= parseFloat(document.getElementById("pintAmounts").value);
+    var cups= amount2*2;
+    var quarts= amount2/2;
+    var gallons= quarts/4;
+
+    document.getElementById("cupBox2").innerHTML= cups;
+    document.getElementById("QuartBox2").innerHTML= quarts;
+    document.getElementById("gallonBox2").innerHTML=gallons;
+
+
+}
+function ConverterDry5() {
+    var amount2= parseFloat(document.getElementById("quartsAmounts").value);
+    var gallons= amount2/4;
+
+
+
+
+
+    var Pints= amount2*2;
+    var cups= Pints*2;
+
+    document.getElementById("cupBox3").innerHTML= cups;
+    document.getElementById("pintsBox2").innerHTML= Pints;
+    document.getElementById("gallonBox4").innerHTML=gallons;
+
+
+}
+function ConverterDry6() {
+    var amount2= parseFloat(document.getElementById("gallonsAmounts").value);
+    var quarts= amount2*4;
+
+
+
+
+
+    var Pints= quarts*2;
+    var cups= Pints*2;
+
+    document.getElementById("cupBox4").innerHTML= cups;
+    document.getElementById("QuartBox3").innerHTML= Pints;
+    document.getElementById("gallonBox3").innerHTML=quarts;
+
+
+}
+
+
+
+function time() {
+
+    var loops=0;
+    var number= Math.pow(10,100);
+while(number>loops){
+
+    loops++;
+
+
+
+}
+
+
+}
+
+
+function pictureChange() {
+    var Thing= "life";
+    var Thing2="Nope";
+
+    var number=0;
+    while( Thing!=Thing2) {
+        if ( number==0){
+            document.getElementById("PictureBox").src="images/864554.jpg";
+                time();
+            number=1;
+
+        }
+        if ( number==1){
+            document.getElementById("PictureBox").src="images/pizza.jpg";
+                time();
+            number=2;
+
+        }
+        if ( number==2){
+            document.getElementById("PictureBox").src="images/2514148.jpg";
+                time();
+            number=3;
+
+        }
+        if ( number==3){
+            document.getElementById("PictureBox").src="images/1090243.jpg";
+                time();
+            number=0;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
 
 
 }
